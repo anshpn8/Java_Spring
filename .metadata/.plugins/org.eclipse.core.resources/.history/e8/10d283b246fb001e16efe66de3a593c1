@@ -1,0 +1,26 @@
+<%@page import="java.util.List" %>
+<%@page import="org.hibernate.Query"%>
+<%@page import="com.helper.FactoryProvider" %>
+<%@page import="org.hibernate.Session"%>
+<%@page import="com.myNote.*" %>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update_page</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<%@include file="all_css.jsp" %>
+</head>
+<body>
+	<div class="container">
+	<%@include file="navbar.jsp"%>
+	<h2>This is edit page</h2>
+	<br>
+	
+	
+
+</body>
+</html>

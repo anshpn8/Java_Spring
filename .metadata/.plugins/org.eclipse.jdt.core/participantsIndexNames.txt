@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+C:\Users\pawan\eclipse-workspace-new\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\641173549.index
+\MyNotes\src\main\resources
+C:\Users\pawan\eclipse-workspace-new\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2925332238.index
+\MyNotes\src\main\java
+C:\Users\pawan\eclipse-workspace-new\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3079393204.index
+\MyNotes\src\main\java

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<%@include file="all_css.jsp" %>
+    
+    </head>
+<body>
+    <div class="container">
+    <%@include file="navbar.jsp" %>
+    <h2>This is the Home page</h2>
+    </div>
+    
+    <%@include file="all_js.jsp" %>
+</body>
+</html>
+
+
+
+

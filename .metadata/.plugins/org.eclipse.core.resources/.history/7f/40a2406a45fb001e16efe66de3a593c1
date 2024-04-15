@@ -1,0 +1,48 @@
+<%@page import="java.util.List" %>
+<%@page import="org.hibernate.Query"%>
+<%@page import="com.helper.FactoryProvider" %>
+<%@page import="org.hibernate.Session"%>
+<%@page import="com.myNote.*" %>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update_page</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<%@include file="all_css.jsp" %>
+</head>
+<body>
+	<div>
+	<%@include file="navbar.jsp" %>
+	<%{
+	int noteId=Integer.parseInt(request.getParameter("noteId").trim());
+	Session s=FactoryProvider.getFactory().openSession();
+	Note note=(Note)s.get(Note.class,noteId);
+	%>
+  <form action="UpdateServlet" method="post">
+  <input value="<%= note.getId() %>" name="noteId" type="hidden"/>
+  <div class="form-group">
+    <label for="title">Note title</label>
+    <input required  name="title" type="text" id="title" name="title" class="form-control" area-describedby="emailHelp" placeholder="Enter the Title" value="<%=note.getTitle() %>>"><br><br>
+  </div>
+  <div>
+    <label for="note">Note here:</label>
+    <textarea required name="content" for="content" id="content" name="note" placeholder="Enter your text here" class="form-control" style="height:300px"><%= note.getContent() %></textarea><br><br>
+  </div>
+  <div class="container text-center">
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Save Your Note</button>
+  </div>
+  </form>
+  
+  <%
+	}
+  %>
+	
+	</div>
+	
+
+</body>
+</html>
